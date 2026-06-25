@@ -1,12 +1,14 @@
 {
   "version": "2.0",
-  "dataset_id": "on004819",
-  "source": "openneuro",
-  "source_id": "ds004819",
+  "pipeline_stage": "enriched",
   "title": "Flexible, Scalable, High Channel Count Stereo-Electrode for Recording in the Human Brain",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Keundong Lee": {},
-    "Angelique C. Paulk": {},
+    "Angelique C. Paulk": {
+      "orcid": "0000-0002-4413-3417"
+    },
     "Yun Goo Ro": {},
     "Daniel R. Cleary": {},
     "Karen J. Tonsfeldt": {},
@@ -20,73 +22,171 @@
     "Samantha M. Russman": {},
     "Jimmy C. Yang": {},
     "Amy Baohan": {},
-    "R. Mark Richardson": {},
+    "R. Mark Richardson": {
+      "orcid": "0000-0003-2620-7387"
+    },
     "Ziv M. Williams": {},
     "Shelley I. Fried": {},
     "Hoi Sang U": {},
     "Ahmed M. Raslan": {},
     "Sharona Ben-Haim": {},
     "Eric Halgren": {},
-    "Sydney S. Cash": {},
-    "Shadi. A. Dayeh": {}
+    "Sydney S. Cash": {
+      "orcid": "0000-0002-4557-6391"
+    },
+    "Shadi. A. Dayeh": {
+      "orcid": "0000-0002-1756-1774"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004819.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1101/2022.11.08.515705.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004819",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004819",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2022.11.08.515705",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "NIH UG3NS123723-01"
-    },
-    {
-      "funder_name": "NIH R01NS123655-01"
-    },
-    {
-      "funder_name": "NIH NBIB DP2-EB029757"
-    },
-    {
-      "funder_name": "NIH MH120886-01"
-    },
-    {
-      "funder_name": "NSF 1728497"
-    },
-    {
-      "funder_name": "NSF 1351980"
-    },
-    {
-      "funder_name": "NSF DGE-1650112"
-    },
-    {
-      "funder_name": "NIH K24-NS088568"
-    },
-    {
-      "funder_name": "NIH R01-NS062092"
-    },
-    {
       "funder_name": "Tiny Blue Dot Foundation"
-    },
-    {
-      "funder_name": "NIH NS047101"
     },
     {
       "funder_name": "NIH K99 NS119291"
     },
     {
       "funder_name": "MGH - ECOR"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "UG3NS123723-01"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "R01NS123655-01"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "DP2-EB029757"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "MH120886-01"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "1728497"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "1351980"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "DGE-1650112"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "K24-NS088568"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "R01-NS062092"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "NS047101"
+    },
+    {
+      "funder_name": "NIH",
+      "award_number": "K99NS119291"
     }
   ],
-  "acknowledgements": "We are grateful for the technical support from the nano3 cleanroom facilities at UCSD’s Qualcomm Institute where the depth electrode fabrication was conducted. This work was performed, in part, at the San Diego Nanotechnology Infrastructure (SDNI) of UCSD, a member of the National Nanotechnology Coordinated Infrastructure, which is supported by the NSF (grant ECCS1542148). We thank Yangling Chou, Aaron Tripp, Fausto Minidio, Daniel J. Soper, and Alexandra O’Donnell for their help in collecting the data."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".dat",
+    ".edf",
+    ".json",
+    ".mat",
+    ".md",
+    ".tsv"
+  ],
+  "description": "This dataset contains intracranial EEG (iEEG) recordings from human patients, rodents, pigs, and non-human primates acquired using novel flexible, scalable, high-channel-count micro-stereo-electrodes. The data includes raw and preprocessed epoched recordings designed to evaluate the performance of these advanced recording devices and examine neural responses to direct electrical brain stimulation across multiple species.",
+  "methods_description": "Intracranial EEG data were collected using flexible, scalable, high-channel-count stereo-electrodes. The dataset includes raw and preprocessed (epoched) iEEG recordings with binary files and channel maps provided in the derivatives folder. Direct electrical stimulation was applied to examine stimulation effects on neural activity.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "stereo-electrodes"
+    },
+    {
+      "term": "neural recording"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "direct electrical stimulation"
+    },
+    {
+      "term": "microelectrodes"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "rodents"
+    },
+    {
+      "term": "pigs"
+    },
+    {
+      "term": "non-human primates"
+    },
+    {
+      "term": "multi-species"
+    },
+    {
+      "term": "preprocessed"
+    },
+    {
+      "term": "epoched"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "derivatives"
+    }
+  ],
+  "source_hash": "bdf8ca4f63ec7f1914734c79c7ba1c31e03ee12a05c03a0dd6c9b984505057e3"
 }
