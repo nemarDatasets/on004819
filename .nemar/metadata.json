@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Flexible, Scalable, High Channel Count Stereo-Electrode for Recording in the Human Brain",
+  "description": "This dataset contains intracranial EEG (iEEG) recordings acquired using novel flexible, scalable, high-channel-count micro-stereo-electrodes for direct neural recording in the human brain and animal models. The dataset includes raw and preprocessed (epoched) iEEG data collected across multiple species (humans, rodents, pigs, and non-human primates) to validate the performance and utility of the electrode technology. Direct electrical stimulation was employed to examine neural responses and characterize electrode functionality for high-resolution brain activity monitoring.",
+  "methods_description": "Intracranial EEG data were recorded using flexible, scalable, high-channel-count stereo-electrodes. The dataset includes raw and preprocessed (epoched) recordings with binary files and channel maps provided in the derivatives folder. Direct electrical stimulation was used to examine effects of stimulation in the brain.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -38,12 +40,57 @@
       "orcid": "0000-0002-1756-1774"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004819.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "intracranial EEG"
     },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "stereo-electrodes"
+    },
+    {
+      "term": "depth electrodes"
+    },
+    {
+      "term": "neural recording"
+    },
+    {
+      "term": "electrical stimulation"
+    },
+    {
+      "term": "direct electrical stimulation"
+    },
+    {
+      "term": "microelectrodes"
+    },
+    {
+      "term": "electrode technology"
+    },
+    {
+      "term": "brain activity"
+    },
+    {
+      "term": "high-resolution recording"
+    },
+    {
+      "term": "rodents"
+    },
+    {
+      "term": "pigs"
+    },
+    {
+      "term": "non-human primates"
+    },
+    {
+      "term": "humans"
+    },
+    {
+      "term": "BIDS"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1101/2022.11.08.515705.",
       "identifier_type": "DOI",
@@ -63,6 +110,11 @@
       "identifier": "10.1101/2022.11.08.515705",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004819.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -118,15 +170,19 @@
     {
       "funder_name": "NIH",
       "award_number": "K99NS119291"
+    },
+    {
+      "funder_name": "NSF",
+      "award_number": "ECCS1542148"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "1.5 GB (25 files)"
   ],
   "formats": [
     ".dat",
@@ -134,59 +190,8 @@
     ".json",
     ".mat",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset contains intracranial EEG (iEEG) recordings from human patients, rodents, pigs, and non-human primates acquired using novel flexible, scalable, high-channel-count micro-stereo-electrodes. The data includes raw and preprocessed epoched recordings designed to evaluate the performance of these advanced recording devices and examine neural responses to direct electrical brain stimulation across multiple species.",
-  "methods_description": "Intracranial EEG data were collected using flexible, scalable, high-channel-count stereo-electrodes. The dataset includes raw and preprocessed (epoched) iEEG recordings with binary files and channel maps provided in the derivatives folder. Direct electrical stimulation was applied to examine stimulation effects on neural activity.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "iEEG"
-    },
-    {
-      "term": "stereo-electrodes"
-    },
-    {
-      "term": "neural recording"
-    },
-    {
-      "term": "electrical stimulation"
-    },
-    {
-      "term": "direct electrical stimulation"
-    },
-    {
-      "term": "microelectrodes"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "rodents"
-    },
-    {
-      "term": "pigs"
-    },
-    {
-      "term": "non-human primates"
-    },
-    {
-      "term": "multi-species"
-    },
-    {
-      "term": "preprocessed"
-    },
-    {
-      "term": "epoched"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "derivatives"
-    }
-  ],
-  "source_hash": "bdf8ca4f63ec7f1914734c79c7ba1c31e03ee12a05c03a0dd6c9b984505057e3"
+  "source_hash": "6f4089f616689d7a0e004755524c132cc53ca79bea395826dddda1713d63ee39"
 }
